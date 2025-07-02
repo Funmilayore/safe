@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #e63946;
+  font-weight: 700;
+}
+
+nav {
+  float: right;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Hero */
+.hero {
+  background: #fceaea;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: #e63946;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.cta-button {
+  background: #e63946;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Features */
+.features {
+  padding: 60px 0;
+  background: #fff;
+}
+
+.features h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.feature-item {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Mission */
+.mission {
+  background: #f4f4f4;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.mission h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Download Section */
+.download {
+  background: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.download-buttons .btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  background: #333;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn.google {
+  background: #34a853;
+}
+
+.btn.apple {
+  background: #000;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
