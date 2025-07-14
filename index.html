@@ -1,79 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SafeHer  Commute Safely</title>
-  <link rel="stylesheet" href="index.css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeHer - Safety App for Nigerian Women</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1 class="logo">SafeHer</h1>
-      <nav>
-        <a href="#features">Features</a>
-        <a href="#mission">Mission</a>
-        <a href="#download">Download</a>
-      </nav>
-    </div>
-  </header>
+    <!-- Header with Hamburger Menu -->
+    <header>
+        <div class="logo">Safe<span>Her</span></div>
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section class="hero">
-    <div class="container">
-      <h2>Commute Confidently, Stay Safe</h2>
-      <p>Your safety companion for every journey. Real-time tracking, silent SOS alerts, and instant emergency contact updates—because your safety matters.</p>
-      <a href="#download" class="cta-button">Get SafeHer</a>
+    
+    <!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Stay Safe, Wherever You Go</h1>
+        <p>SafeHer is a mobile safety app designed to protect Nigerian women during commutes with real-time tracking, silent SOS alerts, and emergency notifications.</p>
+        <a href="#download" class="cta-button">Download Now</a>
     </div>
-  </section>
+    <div class="hero-image">
+        <!-- Replace with your actual image path -->
+        <img src="hero.jpg" alt="Woman using SafeHer app">
+    </div>
+</section>
 
-  <section id="features" class="features">
-    <div class="container">
-      <h3>Key Features</h3>
-      <div class="feature-grid">
-        <div class="feature-item">
-          <h4>Trip Timers</h4>
-          <p>Set trip duration and get automatic alerts when time exceeds expected arrival.</p>
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2>Your Safety, Our Priority</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Real-Time Trip Tracking</h3>
+                <p>Share your live location with trusted contacts during commutes.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-bell"></i>
+                <h3>Silent SOS Trigger</h3>
+                <p>Discreetly send emergency alerts with a single button press.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Offline SMS Alerts</h3>
+                <p>Works even without internet—sends emergency SMS to your contacts.</p>
+            </div>
         </div>
-        <div class="feature-item">
-          <h4>Silent SOS</h4>
-          <p>Trigger emergency alerts silently no screen unlock needed.</p>
+    </section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+  <div class="container">
+    <h2>What Our Users Say</h2>
+    <p class="subtitle">Trusted by thousands of Nigerian women</p>
+
+    <div class="testimonial-grid">
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card">
+        <div class="quote">
+          <i class="fas fa-quote-left"></i>
+          <p>"SafeHer saved me when a taxi driver changed routes unexpectedly. My emergency contacts received my location instantly through the SOS alert!"</p>
         </div>
-        <div class="feature-item">
-          <h4>Real-Time Alerts</h4>
-          <p>Notify emergency contacts with live location in real time.</p>
+        <div class="user-info">
+          <h4>Adenike O.</h4>
+          <p>Lagos • Student</p>
         </div>
-        <div class="feature-item">
-          <h4>Built for Nigerian Women</h4>
-          <p>Designed with local commuting challenges and cultural awareness in mind.</p>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card">
+        <div class="quote">
+          <i class="fas fa-quote-left"></i>
+          <p>"The silent SOS feature helped me during a scary encounter at a bus stop. My friends arrived within 10 minutes after getting my alert."</p>
+        </div>
+        <div class="user-info">
+          <h4>Chiamaka M.</h4>
+          <p>Abuja • Banker</p>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card">
+        <div class="quote">
+          <i class="fas fa-quote-left"></i>
+          <p>"As a nurse working night shifts, the offline SMS alerts give my husband peace of mind when I'm commuting late."</p>
+        </div>
+        <div class="user-info">
+          <h4>Aminat K.</h4>
+          <p>Ibadan • Nurse</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="mission" class="mission">
-    <div class="container">
-      <h3>Our Mission</h3>
-      <p>To create a safer, more accountable commuting experience for women in Nigeria by leveraging technology, community, and care.</p>
+<!-- Updated Download Section -->
+<section class="download" id="download">
+    <h2>Download SafeHer Today</h2>
+    <div class="app-buttons">
+        <a href="login.html" class="app-button">
+            <i class="fab fa-google-play"></i> Google Play
+        </a>
+        <a href="login.html" class="app-button">
+            <i class="fab fa-apple"></i> App Store
+        </a>
     </div>
-  </section>
+    <p class="login-redirect">Already have an account? <a href="login.html">Log in</a></p>
+</section>
 
-  <section id="download" class="download">
-    <div class="container">
-      <h3>Download SafeHer</h3>
-      <p>Join thousands of women commuting safely every day.</p>
-      <div class="download-buttons">
-        <a href="#" class="btn google">Get it on Google Play</a>
-        <a href="#" class="btn apple">Download on App Store</a>
-      </div>
-    </div>
-  </section>
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="mailto:contact@safeher.com">Contact Us</a>
+        </div>
+        <p>&copy; 2025 SafeHer. All rights reserved.</p>
+    </footer>
 
-  <footer>
-    <div class="container">
-      <p>© 2025 SafeHer. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
