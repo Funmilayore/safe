@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeHer | Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1>Safe<span>Her</span></h1>
+            <p>Your Safety Companion</p>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <ul>
+                <li class="active">
+                    <a href="#">
+                        <i class="fas fa-home"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <span>Trip Tracking</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-users"></i>
+                        <span>Trusted Contacts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-history"></i>
+                        <span>Trip History</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-bell"></i>
+                        <span>Alerts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="sidebar-footer">
+            <button id="logout-btn">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Top Header Bar -->
+        <header class="top-header">
+            <div class="header-left">
+                <button id="menu-toggle" class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h2>Dashboard Overview</h2>
+            </div>
+            
+            <div class="header-right">
+                <button id="emergency-btn" class="emergency-btn pulse">
+                    <i class="fas fa-bell"></i> EMERGENCY SOS
+                </button>
+                
+                <div class="user-profile">
+                    <img src="images/user-avatar.jpg" alt="User" class="avatar">
+                    <span>Hi, <strong id="username">Adenike</strong></span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <div class="content-wrapper">
+            <!-- Safety Status Section -->
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h3><i class="fas fa-shield-alt"></i> Safety Status</h3>
+                    <span class="status-badge active">
+                        <i class="fas fa-circle"></i> Protection Active
+                    </span>
+                </div>
+                
+                <div class="status-cards">
+                    <div class="status-card">
+                        <div class="card-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Trip Tracking</h4>
+                        <p id="trip-status">Not Active</p>
+                        <button id="trip-toggle" class="btn-primary">Start Trip</button>
+                    </div>
+                    
+                    <div class="status-card">
+                        <div class="card-icon">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <h4>Trusted Contacts</h4>
+                        <p id="contacts-count">3 people</p>
+                        <button id="manage-contacts" class="btn-primary">Manage</button>
+                    </div>
+                    
+                    <div class="status-card">
+                        <div class="card-icon">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <h4>Trip History</h4>
+                        <p>Last 7 days</p>
+                        <button id="view-history" class="btn-primary">View</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Actions Section -->
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h3><i class="fas fa-bolt"></i> Quick Actions</h3>
+                </div>
+                
+                <div class="quick-actions">
+                    <button id="fake-call" class="action-btn">
+                        <i class="fas fa-phone"></i>
+                        <span>Fake Call</span>
+                    </button>
+                    
+                    <button id="safety-checkin" class="action-btn">
+                        <i class="fas fa-check-double"></i>
+                        <span>Safety Check-In</span>
+                    </button>
+                    
+                    <button id="share-location" class="action-btn">
+                        <i class="fas fa-share-alt"></i>
+                        <span>Share Location</span>
+                    </button>
+                    
+                    <button id="emergency-contacts" class="action-btn">
+                        <i class="fas fa-user-shield"></i>
+                        <span>Emergency Contacts</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Recent Activity Section -->
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h3><i class="fas fa-clock"></i> Recent Activity</h3>
+                    <button id="view-all" class="btn-text">View All</button>
+                </div>
+                
+                <ul class="activity-list">
+                    <li class="activity-item">
+                        <i class="fas fa-check-circle success"></i>
+                        <div class="activity-details">
+                            <p>Safety check-in completed</p>
+                            <small>Today, 08:45 AM</small>
+                        </div>
+                    </li>
+                    
+                    <li class="activity-item">
+                        <i class="fas fa-map-marked-alt primary"></i>
+                        <div class="activity-details">
+                            <p>Trip to Victoria Island tracked</p>
+                            <small>Yesterday, 6:30 PM</small>
+                        </div>
+                    </li>
+                    
+                    <li class="activity-item">
+                        <i class="fas fa-bell alert"></i>
+                        <div class="activity-details">
+                            <p>SOS alert sent to contacts</p>
+                            <small>Monday, 4:15 PM</small>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <!-- Emergency Modal -->
+    <div id="emergency-modal" class="modal">
+        <div class="modal-content">
+            <h2><i class="fas fa-exclamation-triangle"></i> Emergency SOS</h2>
+            <p>This will immediately notify your trusted contacts with your current location.</p>
+            
+            <div class="modal-actions">
+                <button id="cancel-emergency" class="btn-secondary">Cancel</button>
+                <button id="confirm-emergency" class="btn-danger">
+                    <i class="fas fa-bell"></i> SEND SOS
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
